@@ -1,4 +1,78 @@
+:root {
+  --color-primary: #8298fa;
+  --color-secondary: #fff;
+  --color-black: #000;
+}
+
 h1 {
-  background-color: aqua;
-  color: blue;
+  color: var(--color-primary);
+  font-family: "Rubik Bubbles", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+h2 {
+  color: var(--color-secondary);
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+h3 {
+  color: greenyellow;
+}
+h4 {
+  font-size: 2rem;
+  color: var(--color-secondary);
+  font-family: "Russo One", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-black);
+}
+
+.footer__section {
+  text-align: center;
+  padding: 8rem 9rem;
+}
+.footer--header {
+  color: var(--color-primary);
+  font-size: 4rem;
+  font-family: "Rubik Bubbles", system-ui;
+}
+.footer-icon {
+  font-size: 80px;
+  margin: 2rem;
+  margin-bottom: 4rem;
+}
+.footer-text {
+  color: var(--color-secondary);
+  font-weight: 200;
+  background-color: var(--color-black);
+}
+@media screen and (max-width: 1024px) {
+  .footer__section {
+    padding: 2rem 7rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  .footer--header {
+    font-size: 2rem;
+  }
+  .footer-icon {
+    font-size: 30px;
+  }
+  .footer-text {
+    font-size: 0.7rem;
+  }
 }
