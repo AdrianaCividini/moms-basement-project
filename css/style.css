@@ -11,6 +11,10 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
 h1 {
   color: var(--color-primary);
   font-family: "Rubik Bubbles", system-ui;
@@ -21,13 +25,16 @@ h1 {
 }
 h2 {
   color: var(--color-secondary);
-  font-size: 3rem;
+  font-size: 4rem;
+  text-align: center;
   font-family: "Russo One", sans-serif;
   font-weight: 400;
-  font-style: italic;
 }
 h3 {
-  color: blue;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  font-family: "Roboto", sans-serif;
 }
 h4 {
   font-size: 2rem;
@@ -131,12 +138,51 @@ a:hover {
     left: 0;
   }
 }
-section {
+section .nav__image {
   background: url(/image/momsbase.webp) no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
 }
 
+/* Cards */
+.card {
+  background-color: var(--color-black);
+  padding: 3rem 5rem;
+}
+.card-header {
+  text-align: center;
+}
+.card__icon {
+  width: 80px;
+  height: 80px;
+}
+.grid--1x2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.card-container {
+  background-color: var(--color-primary);
+  border-radius: 0px 30px 0px 30px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--color-secondary);
+  box-shadow: 0px 0px 10px 0px var(--color-black);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  width: 500px;
+  height: 200px;
+  padding: 1.5rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 100px 300px;
+}
+.grid--1x2 {
+  display: inline-flex;
+  margin: 2rem;
+}
+
+.card--heading {
+  padding-bottom: 1rem;
+}
 /* Footer */
 footer {
   background-color: var(--color-black);
@@ -189,5 +235,48 @@ footer {
   .about__header {
     padding: 0;
     margin: 0;
+  }
+}
+
+/* Foundation */
+.foundation {
+  background-color: var(--color-black);
+  color: var(--color-secondary);
+  margin: 0 auto;
+  padding: 2rem;
+}
+.foundation-container {
+  border: 1px solid var(--color-primary);
+  width: 700px;
+  text-align: center;
+}
+.foundation-header {
+  margin: 1rem;
+}
+.foundation-info {
+  border: 1px solid var(--color-primary);
+}
+.foundation-heading {
+  color: var(--color-primary);
+  font-family: "helvetica", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+.foundation-social {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+.foundation-paragrafer {
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 700px) {
+  .foundation-container {
+    width: 100%;
+    padding: 0;
   }
 }
