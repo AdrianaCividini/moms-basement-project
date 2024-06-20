@@ -20,7 +20,7 @@ h1 {
   font-family: "Rubik Bubbles", system-ui;
   font-weight: 400;
   font-style: normal;
-  font-size: 5rem;
+  font-size: 7rem;
   text-transform: uppercase;
 }
 h2 {
@@ -60,35 +60,37 @@ nav {
   width: 100%;
 }
 .logo {
-  margin-left: 40px;
+  display: inline-flex;
+  position: relative;
+  top: 10px;
+  left: 15px;
 }
 .logo img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
 }
-nav ul {
+nav .list {
   float: right;
   list-style: none;
   margin-right: 50px;
 }
-nav ul li {
+nav .list .nav-item {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
-nav ul li a {
+nav .list .nav-item a {
   color: var(--color-secondary);
   padding: 9px 13px;
   border-radius: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.4rem;
 }
-a.active,
+
 a:hover {
-  background-color: aliceblue;
-  color: var(--color-black);
+  background-color: var(--color-black);
   transition: 0.5s;
 }
 .checkbtn {
@@ -103,7 +105,7 @@ a:hover {
   display: none;
 }
 @media (max-width: 952px) {
-  nav ul li a {
+  nav .list .nav-item a {
     font-size: 16px;
   }
 }
@@ -111,7 +113,7 @@ a:hover {
   .checkbtn {
     display: block;
   }
-  ul {
+  .list {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -121,12 +123,12 @@ a:hover {
     text-align: center;
     transition: all 0.5s;
   }
-  nav ul li {
+  nav .list .nav-item {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
-  nav ul li a {
+  nav .list .nav-item a {
     font-size: 25px;
   }
   a:hover,
@@ -134,24 +136,76 @@ a:hover {
     background: aliceblue;
     color: var(--color-black);
   }
-  #check:checked ~ ul {
+  #check:checked ~ .list {
     left: 0;
   }
 }
-section .nav__image {
+.nav__image {
   background: url(/image/momsbase.webp) no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
 }
 
+/* About */
+.about {
+  background: rgb(130, 152, 250);
+  background: linear-gradient(
+    0deg,
+    rgba(130, 152, 250, 1) 23%,
+    rgba(0, 0, 0, 1) 78%
+  );
+}
+.about--container {
+  padding: 7rem;
+  text-align: center;
+}
+.about-brand {
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+  font-family: "Roboto", sans-serif;
+  margin: 2rem;
+}
+.text-container {
+  width: 100%;
+  max-width: 900px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 auto;
+}
+.icon-momss {
+  text-align: center;
+  padding: 2rem;
+}
+.icon {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  box-shadow: inset 0 -3em 3em rgba(135, 72, 218, 0.3), 0 0 0 2px white,
+    0.3em 0.3em 1em rgba(246, 247, 244, 0.6);
+}
+@media screen and (max-width: 852px) {
+  .about {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}
+
 /* Cards */
 .card {
-  background-color: var(--color-black);
+  background: rgb(130, 152, 250);
+  background: linear-gradient(
+    0deg,
+    rgba(130, 152, 250, 1) 23%,
+    rgba(0, 0, 0, 1) 78%
+  );
   padding: 5rem;
 }
 .card-header {
   text-align: center;
-  padding-bottom: 3rem;
+  padding: 4rem 0;
 }
 section .card-container {
   margin-bottom: 3rem;
@@ -175,12 +229,10 @@ section .card-container {
   padding: 1rem;
   grid-template-columns: 1fr 4fr;
 }
-
 .card-icon {
   width: 100px;
   height: 100px;
 }
-
 .card--heading {
   font-weight: 600;
   padding-bottom: 1rem;
@@ -198,7 +250,7 @@ section .card-container {
   }
   .card-container {
     width: 100%;
-    height: 400px;
+    height: 300px;
     padding: 1rem;
   }
   .grid-1x2 {
@@ -214,59 +266,75 @@ section .card-container {
     padding-top: 1.5rem;
   }
 }
-
-/* Footer */
-footer {
-  background-color: var(--color-black);
-}
-.footer__section {
-  text-align: center;
-  padding: 8rem 9rem;
-}
-.footer--header {
-  color: var(--color-primary);
-  font-size: 4rem;
-  font-family: "Rubik Bubbles", system-ui;
-}
-.footer-icon {
-  font-size: 80px;
-  margin: 2rem;
-  margin-bottom: 4rem;
-}
-.footer-text {
-  color: var(--color-secondary);
-  font-weight: 200;
-  background-color: var(--color-black);
-}
-
-/* About */
-.about {
-  background-color: var(--color-black);
-}
-.about--container {
-  padding: 3rem 6rem;
-  margin: 2rem;
-  text-align: center;
-}
-.about__header {
-  margin: 4rem;
-}
-.icon-momss {
-  text-align: center;
-  padding-bottom: 2rem;
-}
-.icon {
-  margin-top: 4rem;
-  width: 200px;
-  height: 200px;
-  padding: 20px;
-  box-shadow: inset 0 -3em 3em rgba(135, 72, 218, 0.3), 0 0 0 2px white,
-    0.3em 0.3em 1em rgba(246, 247, 244, 0.6);
-}
-@media screen and (min-width: 400px) {
-  .about__header {
+@media (max-width: 796px) {
+  .card-header {
+    font-size: 3rem;
+  }
+  .card-container {
+    width: 100%;
+    height: 400px;
+  }
+  .grid-1x2 {
     padding: 0;
-    margin: 0;
+    padding-top: 2rem;
+  }
+}
+
+/* Tokenomics */
+.token {
+  background-color: var(--color-black);
+  color: var(--color-secondary);
+  text-align: center;
+  padding: 2rem;
+}
+.toke-supply {
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 3rem;
+}
+.grid--1x2 {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+.launch {
+  background-color: var(--color-secondary);
+  text-align: center;
+  margin: 2rem;
+}
+.launch-strategy {
+  color: var(--color-black);
+  letter-spacing: 2px;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.list__item {
+  list-style: none;
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 2.5;
+  color: var(--color-black);
+}
+.img-launch {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (max-width: 1170px) {
+  .toke-token {
+    font-size: 3rem;
+  }
+  .grid--1x2 {
+    grid-template-columns: 1fr;
+  }
+  .launch {
+    margin: 1rem;
+  }
+  .launch-strategy {
+    font-size: 1.7rem;
+  }
+  .list__item {
+    font-size: 1.5rem;
   }
 }
 
@@ -276,6 +344,9 @@ footer {
   color: var(--color-secondary);
   margin: 0 auto;
   padding: 2rem;
+}
+.foundation-header1 {
+  margin: 3rem 0;
 }
 .foundation-container {
   border: 1px solid var(--color-primary);
@@ -306,63 +377,57 @@ footer {
   margin-bottom: 2rem;
   font-size: 1.3rem;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .foundation-container {
     width: 100%;
     padding: 0;
   }
-}
-
-/* Tokenomics */
-.token {
-  background-color: var(--color-primary);
-  color: var(--color-secondary);
-  text-align: center;
-  padding: 2rem;
-}
-.toke-supply {
-  font-size: 2rem;
-  font-family: "Courier New", Courier, monospace;
-  margin-top: 3rem;
-}
-
-.grid--1x2 {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 100px;
-  grid-template-columns: 1fr 1fr;
-}
-.launch {
-  background-color: var(--color-secondary);
-  text-align: center;
-}
-
-.launch-strategy {
-  color: var(--color-black);
-  font-size: 2rem;
-  padding-bottom: 2rem;
-}
-.list__item {
-  list-style: none;
-  font-size: 2rem;
-  font-family: "Courier New", Courier, monospace;
-  line-height: 2.5;
-}
-.img-launch {
-  display: block;
-  width: 60%;
-  margin: 0 auto;
-}
-.contract-address {
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-  padding-bottom: 2rem;
-}
-@media screen and (max-width: 1140px) {
-  .grid--1x2 {
-    grid-template-columns: 1fr;
+  .foundation-heading {
+    font-size: 2rem;
   }
-  .img-launch {
-    width: 100%;
+  .foundation-info {
+    padding: 0;
+  }
+}
+
+/* Footer */
+footer {
+  background: rgb(130, 152, 250);
+  background: linear-gradient(
+    0deg,
+    rgba(130, 152, 250, 1) 23%,
+    rgba(0, 0, 0, 1) 78%
+  );
+}
+.footer__section {
+  text-align: center;
+  padding: 3rem;
+}
+.footer-join {
+  margin-bottom: 3rem;
+}
+.footer--header {
+  color: var(--color-primary);
+  font-size: 4rem;
+  font-family: "Rubik Bubbles", system-ui;
+  margin-bottom: 3rem;
+}
+.footer-icon {
+  font-size: 50px;
+  margin: 2rem;
+  margin-bottom: 4rem;
+}
+.footer-text {
+  font-size: 1.3rem;
+  color: var(--color-secondary);
+  font-weight: 200;
+  background-color: var(--color-black);
+}
+@media screen and (max-width: 768px) {
+  .footer__section {
+    padding: 1rem;
+  }
+  .footer--header {
+    font-size: 2rem;
   }
 }
