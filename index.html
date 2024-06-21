@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta property="og:title" content="Moms basement" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="MomsBasement.jpg" />
+    <meta property="og:url" content="https://momsbasementcoin.com/" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +35,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>✨ Moms Basement</title>
   </head>
   <body>
     <header>
@@ -38,25 +45,26 @@
         <label for="check" class="checkbtn">
           <i class="fa-solid fa-bars" style="color: #fff"></i>
         </label>
-        <label class="logo"> <img src="image/moms-icon2.png" alt="" /> </label>
-        <ul class="list">
-          <li class="nav-item"><a href="#">Home</a></li>
-          <li class="nav-item"><a href="#">about us</a></li>
-          <li class="nav-item"><a href="#">How to buy</a></li>
-          <li class="nav-item"><a href="#">tokenomic</a></li>
-          <li class="nav-item"><a href="#">social</a></li>
+        <label class="logo">
+          <a href="/"
+            ><img src="image/moms-icon2.png" alt="The moms basement logo" /> </a
+        ></label>
+        <ul data-aos="fade-down" class="list">
+          <li class="nav-item"><a href="/">Home</a></li>
+          <li class="nav-item"><a href="#about">about us</a></li>
+          <li class="nav-item"><a href="#how">How to buy</a></li>
+          <li class="nav-item"><a href="#toke">tokenomic</a></li>
+          <li class="nav-item"><a href="#social">social</a></li>
         </ul>
       </nav>
-      <section class="nav__image"></section>
+      <div data-aos="flip-down" class="nav__image"></div>
     </header>
 
     <section class="about">
       <div class="about about--container">
         <header class="about__header">
-          <span class="about-brand"
-            >✨About
-            <h1>Moms Basement</h1>
-          </span>
+          <span id="about" class="about-brand">✨About </span>
+          <h1 data-aos="fade-down">Moms Basement</h1>
           <p class="about text-container">
             We are a community-driven token with one mission, to make it out
             Moms Basement. Inspired by the now iconic meme, we are a movement
@@ -68,24 +76,32 @@
         </header>
       </div>
       <div class="icon-momss">
-        <img
-          class="icon"
-          src="image/moms-icon2.png"
-          alt="The moms basement logo"
-        />
+        <a
+          href="https://dexscreener.com/solana/h6amhmfmagh6l1fura67ppexvf6njripyczmsj7xsto5"
+          target="_blank"
+          ><img
+            data-aos="zoom-in"
+            class="icon"
+            src="image/moms-icon2.png"
+            alt="The moms basement logo"
+        /></a>
       </div>
     </section>
 
     <section>
-      <div class="card">
+      <div id="how" class="card">
         <header>
           <h2 class="card-header">How to buy</h2>
         </header>
 
         <section class="card-container">
-          <div class="grid grid-1x2">
+          <div data-aos="slide-left" class="grid grid-1x2">
             <div class="card-image">
-              <img class="card-icon" src="/image/buy-icon1.webp" alt="" />
+              <img
+                class="card-icon"
+                src="/image/buy-icon1.webp"
+                alt="Moms basement icon"
+              />
             </div>
             <div class="card-content">
               <h3 class="card--heading">Create a wallet</h3>
@@ -97,9 +113,13 @@
         </section>
 
         <section class="card-container">
-          <div class="grid grid-1x2">
+          <div data-aos="slide-right" class="grid grid-1x2">
             <div class="card-image">
-              <img class="card-icon" src="/image/Solana_logo.png" alt="" />
+              <img
+                class="card-icon"
+                src="/image/Solana_logo.png"
+                alt="Moms basement logo"
+              />
             </div>
             <div class="card-content">
               <h3 class="card--heading">Get some SOL</h3>
@@ -112,9 +132,13 @@
         </section>
 
         <section class="card-container">
-          <div class="grid grid-1x2">
+          <div data-aos="slide-right" class="grid grid-1x2">
             <div class="card-image">
-              <img class="card-icon" src="/image/ray1.png" alt="" />
+              <img
+                class="card-icon"
+                src="/image/ray1.png"
+                alt="Moms basement icon"
+              />
             </div>
             <div class="card-content">
               <h3 class="card--heading">Go to Raydium</h3>
@@ -127,9 +151,13 @@
         </section>
 
         <section class="card-container">
-          <div class="grid grid-1x2">
+          <div data-aos="slide-left" class="grid grid-1x2">
             <div class="card-image">
-              <img class="card-icon" src="/image/momsbase.webp" alt="" />
+              <img
+                class="card-icon"
+                src="/image/momsbase.webp"
+                alt="Mons basement icon"
+              />
             </div>
             <div class="card-content">
               <h3 class="card--heading">Swap SOL for $MOMSBASE</h3>
@@ -139,10 +167,18 @@
             </div>
           </div>
         </section>
+        <div class="btn-container">
+          <a
+            href="https://dexscreener.com/solana/h6amhmfmagh6l1fura67ppexvf6njripyczmsj7xsto5"
+            target="_blank"
+          >
+            Buy now</a
+          >
+        </div>
       </div>
     </section>
 
-    <section>
+    <section id="toke">
       <div class="token">
         <h2 class="toke-token">Tokenomics</h2>
         <p class="toke-supply">Total Supply = 1 Billion</p>
@@ -159,20 +195,25 @@
             <li class="list__item">Revoked mint authority</li>
           </ul>
           <h4 class="launch-strategy">Contract Address</h4>
-          <p class="list__item">dalkdjasdjoiasjdnqkdnq</p>
+          <p class="list__item">C6ggTj11LYqH4oQr7oSo15HxD16K3HDqqizMbr73wC4E</p>
         </div>
         <div>
-          <img class="img-launch" src="/image/momsbase.webp" alt="" />
+          <img
+            data-aos="zoom-in"
+            class="img-launch"
+            src="/image/momsbase.webp"
+            alt="Moms basement image, A man sitting in front his computer smoking a cigarette"
+          />
         </div>
       </section>
     </main>
 
-    <section class="foundation">
+    <section id="social" class="foundation">
       <div class="foundation-header">
         <h2 class="foundation-header1">Roadmap</h2>
       </div>
       <div class="foundation foundation-container">
-        <div class="foundation foundation-info">
+        <div data-aos="flip-right" class="foundation foundation-info">
           <h4 class="foundation-heading">
             🚀 Phase 1: Building Our Foundation
           </h4>
@@ -203,7 +244,7 @@
 
     <section class="foundation">
       <div class="foundation foundation-container">
-        <div class="foundation foundation-info">
+        <div data-aos="flip-left" class="foundation foundation-info">
           <h4 class="foundation-heading">
             🌟 Phase 2: Spreading Our Influence
           </h4>
@@ -231,7 +272,7 @@
 
     <section class="foundation">
       <div class="foundation foundation-container">
-        <div class="foundation foundation-info">
+        <div data-aos="flip-up" class="foundation foundation-info">
           <h3 class="foundation-heading">🎉 Phase 3: Beyond the Basement</h3>
           <h4 class="foundation-social">Real-Life Products</h4>
           <p class="foundation-paragrafer">
@@ -261,18 +302,27 @@
     <footer>
       <div class="footer__section">
         <h4 class="footer-join">
-          Join the <span class="footer--header">Moms Basement </span>movement
+          Join the
+          <span data-aos="fade-up" class="footer--header">Moms Basement </span
+          >movement
         </h4>
         <h4>Follow us on</h4>
         <div class="footer--link">
-          <a href="/">
+          <a
+            data-aos="slide-left"
+            href="https://x.com/MOMSBASECOIN"
+            target="_blank"
+          >
             <i
               class="fa-brands footer-icon fa-twitter"
               style="color: #74c0fc"
             ></i>
           </a>
 
-          <a href="/"
+          <a
+            data-aos="slide-right"
+            href="https://t.me/MOMSBASECOIN"
+            target="_blank"
             ><i
               class="fa-brands footer-icon fa-telegram"
               style="color: #74c0fc"
@@ -288,5 +338,10 @@
         </p>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
