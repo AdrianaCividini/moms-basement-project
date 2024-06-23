@@ -40,25 +40,25 @@
   </head>
   <body>
     <header>
-      <nav data-aos="fade-left">
-  <div class="logo">
-    <img src="image/moms-icon2.png" alt="Moms basement logo" />
-  </div>
-  <div class="toggle-button" id="toggleButton">
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-  </div>
-  <ul class="nav-list" id="navList">
-    <li class="nav__item"><a href="#">Home</a></li>
-    <li class="nav__item"><a href="#">about us</a></li>
-    <li class="nav__item"><a href="#">How to buy</a></li>
-    <li class="nav__item"><a href="#">tokenomic</a></li>
-    <li class="nav__item"><a href="#">social</a></li>
-  </ul>
-</nav>
-<aside data-aos="flip-down" class="nav-image"></aside>
- </header>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars" style="color: #fff"></i>
+        </label>
+        <label class="logo">
+          <a href="/"
+            ><img src="image/moms-icon2.png" alt="The moms basement logo" /> </a
+        ></label>
+        <ul data-aos="fade-down" class="list-nav">
+          <li class="nav-item"><a href="/">Home</a></li>
+          <li class="nav-item"><a href="#about">about us</a></li>
+          <li class="nav-item"><a href="#how">How to buy</a></li>
+          <li class="nav-item"><a href="#toke">tokenomic</a></li>
+          <li class="nav-item"><a href="#social">social</a></li>
+        </ul>
+      </nav>
+      <aside data-aos="flip-down" class="nav-image"></aside>
+    </header>
 
     <section class="about">
       <div class="about about--container">
@@ -342,22 +342,6 @@
       </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
-</html>
-
-
-    <script type="text/javascript">
-      const toggleButton = document.getElementById("toggleButton");
-      const navList = document.getElementById("navList");
-
-      toggleButton.addEventListener("click", () => {
-        navList.classList.toggle("active");
-      });
-    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
