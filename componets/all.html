@@ -40,31 +40,30 @@
   </head>
   <body>
     <header>
-      <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fa-solid fa-bars" style="color: #fff"></i>
-        </label>
-        <label class="logo">
-          <a href="/"
-            ><img src="image/moms-icon2.png" alt="The moms basement logo" /> </a
-        ></label>
-        <ul data-aos="fade-down" class="list-nav">
-          <li class="nav-item"><a href="/">Home</a></li>
-          <li class="nav-item"><a href="#about">about us</a></li>
-          <li class="nav-item"><a href="#how">How to buy</a></li>
-          <li class="nav-item"><a href="#toke">tokenomic</a></li>
-          <li class="nav-item"><a href="#social">social</a></li>
+      <nav data-aos="fade-left">
+        <div class="logo">
+          <img src="image/moms-icon2.png" alt="Moms basement logo" />
+        </div>
+        <div class="toggle-button" id="toggleButton">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="nav-list" id="navList">
+          <li class="nav__item"><a href="/">Home</a></li>
+          <li class="nav__item"><a href="#about">about us</a></li>
+          <li class="nav__item"><a href="#how">How to buy</a></li>
+          <li class="nav__item"><a href="#toke">tokenomic</a></li>
+          <li class="nav__item"><a href="#social">social</a></li>
         </ul>
       </nav>
-      <aside data-aos="flip-down" class="nav-image"></aside>
     </header>
 
     <section class="about">
       <div class="about about--container">
         <header class="about__header">
           <span id="about" class="about-brand">✨About </span>
-          <h1 data-aos="fade-down">Moms Basement</h1>
+          <h1 class="about-heading" data-aos="fade-down">Moms Basement</h1>
           <p class="about text-container">
             We are a community-driven token with one mission, to make it out
             Moms Basement. Inspired by the now iconic meme, we are a movement
@@ -94,79 +93,87 @@
           <h2 class="card-header">How to buy</h2>
         </header>
 
-        <section class="card-container">
-          <div data-aos="slide-left" class="grid grid-1x2">
-            <div class="card-image">
-              <img
-                class="card-icon"
-                src="/image/buy-icon1.webp"
-                alt="Moms basement icon"
-              />
-            </div>
-            <div class="card-content">
-              <h3 class="card--heading">Create a wallet</h3>
-              <p class="card--paragrafh">
-                Download a Phantom wallet from your browser.
-              </p>
+        <article class="card-container">
+          <div class="card-container-border">
+            <div data-aos="slide-left" class="grid grid-1x2">
+              <div class="card-image">
+                <img
+                  class="card-icon"
+                  src="/image/buy-icon1.webp"
+                  alt="Moms basement icon"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card--heading">Create a wallet</h3>
+                <p class="card--paragrafh">
+                  Download a Phantom wallet from your browser.
+                </p>
+              </div>
             </div>
           </div>
-        </section>
+        </article>
 
-        <section class="card-container">
-          <div data-aos="slide-right" class="grid grid-1x2">
-            <div class="card-image">
-              <img
-                class="card-icon"
-                src="/image/Solana_logo.png"
-                alt="Moms basement logo"
-              />
-            </div>
-            <div class="card-content">
-              <h3 class="card--heading">Get some SOL</h3>
-              <p class="card--paragrafh">
-                Deposit Solana into this wallet. If you don’t have any SOL you
-                can purchase from an exchange.
-              </p>
+        <article class="card-container">
+          <div class="card-container-border">
+            <div data-aos="slide-right" class="grid grid-1x2">
+              <div class="card-image">
+                <img
+                  class="card-icon"
+                  src="/image/Solana_logo.png"
+                  alt="Moms basement logo"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card--heading">Get some SOL</h3>
+                <p class="card--paragrafh">
+                  Deposit Solana into this wallet. If you don’t have any SOL you
+                  can purchase from an exchange.
+                </p>
+              </div>
             </div>
           </div>
-        </section>
+        </article>
 
-        <section class="card-container">
-          <div data-aos="slide-right" class="grid grid-1x2">
-            <div class="card-image">
-              <img
-                class="card-icon"
-                src="/image/ray1.png"
-                alt="Moms basement icon"
-              />
-            </div>
-            <div class="card-content">
-              <h3 class="card--heading">Go to Raydium</h3>
-              <p class="card--paragrafh">
-                Here you will be converting SOL to $MOMSBASE. Paste the
-                $MOMSBASE contract address (see below) and select $MOMSBASE.
-              </p>
+        <article class="card-container">
+          <div class="card-container-border">
+            <div data-aos="slide-right" class="grid grid-1x2">
+              <div class="card-image">
+                <img
+                  class="card-icon"
+                  src="/image/ray1.png"
+                  alt="Moms basement icon"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card--heading">Go to Raydium</h3>
+                <p class="card--paragrafh">
+                  Here you will be converting SOL to $MOMSBASE. Paste the
+                  $MOMSBASE contract address (see below) and select $MOMSBASE.
+                </p>
+              </div>
             </div>
           </div>
-        </section>
+        </article>
 
-        <section class="card-container">
-          <div data-aos="slide-left" class="grid grid-1x2">
-            <div class="card-image">
-              <img
-                class="card-icon"
-                src="/image/momsbase.webp"
-                alt="Mons basement icon"
-              />
-            </div>
-            <div class="card-content">
-              <h3 class="card--heading">Swap SOL for $MOMSBASE</h3>
-              <p class="card--paragrafh">
-                That’s it! Swap SOL for $MOMSBASE, it’s that simple..
-              </p>
+        <article class="card-container">
+          <div class="card-container-border">
+            <div data-aos="slide-left" class="grid grid-1x2">
+              <div class="card-image">
+                <img
+                  class="card-icon"
+                  src="/image/momsbase.webp"
+                  alt="Mons basement icon"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card--heading">Swap SOL for $MOMSBASE</h3>
+                <p class="card--paragrafh">
+                  That’s it! Swap SOL for $MOMSBASE, it’s that simple..
+                </p>
+              </div>
             </div>
           </div>
-        </section>
+        </article>
         <div class="btn-container">
           <a
             href="https://dexscreener.com/solana/h6amhmfmagh6l1fura67ppexvf6njripyczmsj7xsto5"
@@ -179,37 +186,32 @@
     </section>
 
     <section id="toke">
-      <div class="token">
-        <h2 class="toke-token">Tokenomics</h2>
-        <p class="toke-supply">Total Supply = 1 Billion</p>
-      </div>
-    </section>
-
-    <main>
-      <section class="launch-container">
-        <div class="grid grid--1x2">
-          <div class="launch">
-            <h4 class="launch-strategy">Launch Strategy:</h4>
-            <ul class="list-launch">
-              <li class="list__item">LP tokens burnt</li>
-              <li class="list__item">Revoked freeze authority</li>
-              <li class="list__item">Revoked mint authority</li>
-            </ul>
-            <h4 class="launch-strategy">Contract Address</h4>
-            <p class="list__item list-contract">
-              C6ggTj11LYqH4oQr7oSo15HxD16K3HDqqizMbr73wC4E
-            </p>
-          </div>
-          <div data-aos="zoom-in">
-            <img
-              class="img-launch"
-              src="/image/momsbase.webp"
-              alt="Moms basement image, A man sitting in front his computer smoking a cigarette"
-            />
+      <article class="launch">
+        <div class="launch-container">
+          <div class="grid grid--1x2">
+            <div data-aos="fade-right" class="launch-image">
+              <img
+                src="/image/momsbase.webp"
+                alt="Moms basement image, A man sitting in front his computer smoking a cigarette"
+              />
+            </div>
+            <div data-aos="fade-left" class="launch-text">
+              <h2 class="toke-token">Tokenomics</h2>
+              <ul class="launch-list">
+                <li class="launch__list">LP tokens burnt</li>
+                <li class="launch__list">Revoked freeze authority</li>
+                <li class="launch__list">Revoked mint authority</li>
+              </ul>
+              <p class="toke-supply">Total Supply = 1 Billion</p>
+              <h3 class="launch-contract">Contract Address</h3>
+              <p class="launch-number">
+                C6ggTj11LYqH4oQr7oSo15HxD16K3HDqqizMbr73wC4E
+              </p>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
+      </article>
+    </section>
 
     <section id="social" class="foundation">
       <div class="foundation-header">
@@ -222,24 +224,15 @@
           </h4>
           <h4 class="foundation-social">Social Media Presence</h4>
           <p class="foundation-paragrafer">
-            Top-tier content production across all social media platforms
+            Top-tier content production across all social media platforms.
           </p>
           <p class="foundation-paragrafer">
-            Full-time Telegram devs for daily chats, laughs and ideas
+            Full-time Telegram devs for daily chats, laughs and ideas.
           </p>
-
           <h4 class="foundation-social">Community Engagement</h4>
           <p class="foundation-paragrafer">
-            Meme contests, giveaways, chess and poker nights
-          </p>
-          <h4 class="foundation-social">Learning & Interaction</h4>
-          <p class="foundation-paragrafer">
-            X spaces and AMAs: participate in discussions with crypto leaders to
-            gain new insights
-          </p>
-          <h4 class="foundation-social">Market Presence</h4>
-          <p class="foundation-paragrafer">
-            Listing $MOMSBASE on key exchanges to bring further liquidity
+            Gaming competitions, weekly poker nights, giveaways, X spaces, meme
+            contests and more!
           </p>
         </div>
       </div>
@@ -249,26 +242,33 @@
       <div class="foundation foundation-container">
         <div data-aos="flip-left" class="foundation foundation-info">
           <h4 class="foundation-heading">
-            🌟 Phase 2: Spreading Our Influence
+            🌟 Phase 2: Breaking Out The Basement
           </h4>
-          <h4 class="foundation-social">Podcast Launch</h4>
+          <h4 class="foundation-social">MBA – Moms Basement Academy Launch</h4>
+          <p class="foundation-paragrafer">Unveiling our Web3 headquarters!</p>
           <p class="foundation-paragrafer">
-            Join Mom’s Basement podcast for the latest in crypto, compelling
+            A vibrant online hub where the community can hang out, game and
+            connect with likeminded individuals.
+          </p>
+          <p class="foundation-paragrafer">
+            $MOMSBASE holders will have exclusive access to cutting-edge Crypto
+            Insights, Fitness/Nutrition Programs and Well-being tips.
+          </p>
+          <h4 class="foundation-social">Mom’s Basement Podcast Launch</h4>
+          <p class="foundation-paragrafer">
+            Join Mom’s Basement podcast for the latest crypto news, captivating
             guest stories, and a touch of basement humour.
+          </p>
+          <h4 class="foundation-social">Making a Difference</h4>
+          <p class="foundation-paragrafer">
+            Active support for mental health initiatives and impactful donations
+            to established charities.
           </p>
           <h4 class="foundation-social">Meteoric Marketing Campaigns</h4>
           <p class="foundation-paragrafer">
             Global campaigns with world renowned marketing agencies.
           </p>
-          <p class="foundation-paragrafer">
-            Partnerships with influential crypto voices.
-          </p>
           <p class="foundation-paragrafer">Selective brand collaborations.</p>
-          <h4 class="foundation-social">Charitable Donations</h4>
-          <p class="foundation-paragrafer">
-            Active engagement in mental health initiatives and donations to
-            established charities
-          </p>
         </div>
       </div>
     </section>
@@ -277,27 +277,29 @@
       <div class="foundation foundation-container">
         <div data-aos="flip-up" class="foundation foundation-info">
           <h3 class="foundation-heading">🎉 Phase 3: Beyond the Basement</h3>
-          <h4 class="foundation-social">Real-Life Products</h4>
+          <h4 class="foundation-social">Community Connections</h4>
           <p class="foundation-paragrafer">
-            Mom’s Basement energy drink! Perfect for those long nights of gaming
-            or crypto trading.
+            IRL London space to host events, workshops, and meet-ups.
           </p>
           <p class="foundation-paragrafer">
-            Angel investing in promising crypto start-ups.
-          </p>
-
-          <h4 class="foundation-social">Real-Life Connections</h4>
-          <p class="foundation-paragrafer">
-            Mom’s Basement IRL London space to host events, workshops, and
-            meet-ups.
-          </p>
-          <p class="foundation-paragrafer">
-            Global expansion with more community spaces.
+            Pop-up parties, around the world, to celebrate making it out the
+            Basement.
           </p>
           <p class="foundation-paragrafer">
             Community retreats that mix relaxation with crypto conversations.
           </p>
+          <h4 class="foundation-social">Physical Ventures</h4>
+          <p class="foundation-paragrafer">
+            Moms Basement White Collar Boxing Program: train for two months,
+            then showcase your skills at a special Moms Basement event.
+          </p>
+          <p class="foundation-paragrafer">
+            Angel investing in promising crypto and web2 start-ups.
+          </p>
           <p class="foundation-paragrafer">So much more!</p>
+          <p class="foundation-paragrafer">
+            Stay tuned for even more exciting developments!
+          </p>
         </div>
       </div>
     </section>
@@ -342,6 +344,14 @@
       </div>
     </footer>
 
+    <script type="text/javascript">
+      const toggleButton = document.getElementById("toggleButton");
+      const navList = document.getElementById("navList");
+
+      toggleButton.addEventListener("click", () => {
+        navList.classList.toggle("active");
+      });
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
