@@ -1,3 +1,5 @@
+@import "./normalize.css";
+
 :root {
   --color-primary: #8298fa;
   --color-secondary: #fff;
@@ -111,9 +113,10 @@ nav {
 }
 .nav-list .nav__item a {
   font-size: 18px;
-  color: var(--color-secondary);
+  color: rgb(13 16 26);
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 700;
   transition: 0.5s ease;
 }
 .nav-list .nav__item a:hover {
@@ -396,6 +399,11 @@ nav {
   padding: 2rem;
 }
 .foundation-header1 {
+  color: var(--color-secondary);
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
   margin: 3rem 0;
 }
 .foundation-container {
