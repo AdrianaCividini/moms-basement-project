@@ -147,10 +147,15 @@ nav {
   .nav-list .nav__item {
     padding: 20px 0px;
   }
+  .nav-list .nav__item a {
+    color: aliceblue;
+  }
+
   .nav-list.active {
     display: flex;
   }
 }
+
 /* About */
 .about {
   background: var(--color-back);
@@ -439,6 +444,9 @@ nav {
   font-size: 1.3rem;
 }
 @media screen and (max-width: 768px) {
+  .foundation {
+    padding: 1rem;
+  }
   .foundation-header1 {
     font-size: 3rem;
   }
@@ -450,7 +458,7 @@ nav {
     font-size: 2rem;
   }
   .foundation-info {
-    padding: 0;
+    padding: 1rem;
   }
 }
 
