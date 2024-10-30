@@ -25,11 +25,10 @@ html {
   margin: 0 auto;
 }
 h1 {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   font-family: "Rubik Bubbles", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 7rem;
+  font-weight: 500;
+  font-size: 9rem;
   text-transform: uppercase;
 }
 h2 {
@@ -63,7 +62,7 @@ p {
     font-size: 5rem;
   }
   h2 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   h3 {
     font-size: 2rem;
@@ -72,8 +71,8 @@ p {
     font-size: 2rem;
   }
 }
-/*Nav */
 
+/*Nav */
 nav {
   display: flex;
   background-color: var(--color-primary);
@@ -170,23 +169,13 @@ nav {
   color: var(--color-secondary);
   font-family: "Roboto", sans-serif;
 }
-.about-heading {
-  margin: 2rem;
-}
-.text-container {
-  width: 100%;
-  max-width: 900px;
-  line-height: 1.5;
-  text-align: center;
-  margin: 0 auto;
-}
 .icon-momss {
   text-align: center;
   padding: 2rem;
 }
 .icon {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   padding: 20px;
   box-shadow: inset 0 -3em 3em rgba(135, 72, 218, 0.3), 0 0 0 2px white,
     0.3em 0.3em 1em rgba(246, 247, 244, 0.6);
@@ -209,56 +198,36 @@ nav {
 /* Cards */
 .card {
   background: var(--color-back);
-  padding: 5rem 0;
+  padding: 9rem;
   overflow-x: hidden;
 }
-.card-header {
-  text-align: center;
-  padding-bottom: 4rem;
-}
 .card-container {
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
   width: 100%;
 }
 .card-container-border {
-  width: 50%;
-  height: 200px;
-  background-color: var(--color-primary);
+  width: 70%;
+  height: 70%;
+  background-color: var(--color-black);
   border-radius: 0px 30px 0px 30px;
   border-style: solid;
-  border-width: 1px 1px 1px 1px;
+  border-width: 1px;
   border-color: var(--color-secondary);
-  box-shadow: 0px 0px 10px 0px var(--color-black);
+  box-shadow: 0px 0px 10px 0px var(--color-secondary);
   margin: 0 auto;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-}
-.grid-1x2 {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  padding: 2rem;
-  grid-template-columns: 1fr 4fr;
-}
-.card-image {
-  margin-top: 1rem;
-}
-.card-icon {
-  width: 100px;
-  height: 100px;
 }
 .card-content {
-  margin: 1rem;
+  margin: 2rem;
 }
-.card--heading {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-  letter-spacing: 2.5px;
+ul {
+  padding: 2rem;
 }
 .card--paragrafh {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 300;
+  line-height: 2;
   letter-spacing: 2px;
+  color: var(--color-secondary);
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 @media screen and (max-width: 1040px) {
@@ -266,136 +235,134 @@ nav {
     width: 50%;
     height: 250px;
   }
+  .card--paragrafh {
+    font-size: 1rem;
+  }
+  .card-content {
+    margin: 1rem;
+  }
 }
 @media (max-width: 768px) {
   .card {
     padding: 1rem;
   }
-  .card-header {
-    font-size: 3rem;
-    padding-top: 2rem;
-  }
   .card-container-border {
     width: 100%;
-    height: 400px;
+    height: 100%;
   }
-  .grid-1x2 {
-    grid-template-columns: 1fr;
-    text-align: center;
-    padding-top: 1rem;
-  }
-  .card--heading {
-    font-size: 1.7rem;
-    padding-top: 2rem;
-  }
-  .card--paragrafh {
-    font-size: 1rem;
-    padding-top: 1.5rem;
+  .card-content {
+    margin: 0;
   }
 }
 
 /* Buttons */
 .btn-container {
   align-items: center;
-  padding: 2rem;
+  padding: 4rem;
   text-align: center;
   width: 100%;
 }
 .btn-container a {
   background-color: var(--color-black);
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-style: italic;
   font-weight: 500;
-  padding: 1rem 3rem;
-  text-align: center;
+  padding: 2rem 3rem;
+  border-style: solid;
+  border-radius: 0px 30px 0px 30px;
+  border-width: 3px;
+  border-color: var(--color-secondary);
   color: var(--color-secondary);
 }
-
 .btn-container a:hover {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 @media screen and (max-width: 768px) {
   .btn-container {
     margin-bottom: 2rem;
   }
-}
-/* Tokenomics */
-.launch {
-  background-color: var(--color-secondary);
-  text-align: center;
+  .btn-container a {
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
 }
 
-.grid--1x2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+/* Tokenomics */
 .launch-image > img {
   width: 100%;
   height: 100%;
 }
-
-.launch-text {
-  margin: 3rem 0;
-  padding: 3rem 0;
+.card-meteora-border {
+  width: 50%;
+  height: 50%;
+  background-color: var(--color-black);
+  border-radius: 0px 30px 0px 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-secondary);
+  box-shadow: 0px 0px 10px 0px var(--color-secondary);
+  margin: 0 auto;
 }
-.toke-token {
-  color: var(--color-black);
-  margin-bottom: 2rem;
+.card-meteora-content {
+  color: var(--color-secondary);
+  padding: 3rem;
+  margin-left: 4rem;
 }
-.launch-list {
-  line-height: 2;
+.card-content-text {
+  font-size: 3rem;
+  font-weight: 700;
 }
-.launch__list {
+ol {
+  padding: 1rem;
+}
+.card-meteora-paragrafh {
   font-size: 2rem;
   font-weight: 300;
-  color: var(--color-black);
-  list-style: none;
+  letter-spacing: 3;
+  line-height: 3;
+  color: var(--color-secondary);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
-.toke-supply {
-  color: var(--color-black);
-  font-size: 2rem;
-  font-family: "Courier New", Courier, monospace;
-  margin: 3rem;
-}
+
 .launch-contract {
-  font-size: 2rem;
+  color: var(--color-secondary);
+  font-size: 3rem;
   letter-spacing: 2px;
-  margin: 2rem;
-  color: var(--color-black);
+  margin-top: 6rem;
+  text-align: center;
 }
 .launch-number {
-  color: var(--color-black);
-  font-size: 1.5rem;
-}
-@media screen and (max-width: 1024px) {
-  .grid--1x2 {
-    grid-template-columns: 1fr;
-  }
+  color: var(--color-secondary);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
-  .grid--1x2 {
-    grid-template-columns: 1fr;
+  .card-meteora-border {
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
   }
-  .toke-token {
-    font-size: 2rem;
-    letter-spacing: 2px;
+  .card-meteora-content {
+    padding: 1.5rem;
+    margin-left: 0;
   }
-  .launch__list {
-    font-size: 1rem;
+  .card-content-text {
+    font-size: 1.5rem;
   }
-  .toke-supply {
+  .card-meteora-paragrafh {
     font-size: 1rem;
   }
   .launch-contract {
-    font-size: 1rem;
-  }
-  .launch-text {
-    margin: 0;
-    padding: 2rem 0;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    margin-top: 1rem;
   }
   .launch-number {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
+    margin-top: 1rem;
   }
 }
 
@@ -406,56 +373,31 @@ nav {
   margin: 0 auto;
   padding: 2rem;
 }
-.foundation-header1 {
-  color: var(--color-secondary);
-  font-size: 4rem;
-  text-align: center;
-  font-family: "Russo One", sans-serif;
-  font-weight: 400;
-  margin: 3rem 0;
-}
 .foundation-container {
-  border: 1px solid var(--color-primary);
-  width: 700px;
-  text-align: center;
-}
-.foundation-header {
-  margin: 1rem;
+  border: 2px solid var(--color-primary);
+  margin-top: 4rem;
+  width: 80%;
 }
 .foundation-info {
-  border: 1px solid var(--color-primary);
+  border: 2px solid var(--color-primary);
 }
 .foundation-heading {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   font-family: "helvetica", sans-serif;
   font-size: 2rem;
-  font-weight: 700;
-  padding-bottom: 2rem;
-}
-.foundation-social {
-  color: var(--color-primary);
-  font-size: 1.5rem;
   font-weight: 500;
-  letter-spacing: 1px;
-  margin-bottom: 1rem;
-}
-.foundation-paragrafer {
-  margin-bottom: 2rem;
-  font-size: 1.3rem;
 }
 @media screen and (max-width: 768px) {
   .foundation {
     padding: 1rem;
-  }
-  .foundation-header1 {
-    font-size: 3rem;
   }
   .foundation-container {
     width: 100%;
     padding: 0;
   }
   .foundation-heading {
-    font-size: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
   }
   .foundation-info {
     padding: 1rem;
@@ -477,6 +419,7 @@ footer {
 }
 .footer-join {
   margin-bottom: 3rem;
+  font-size: 2rem;
 }
 .footer--header {
   color: var(--color-primary);
@@ -498,6 +441,10 @@ footer {
 @media screen and (max-width: 768px) {
   .footer__section {
     padding: 1rem;
+  }
+  .footer-join {
+    font-size: 1.5rem;
+    margin-bottom: 0;
   }
   .footer--header {
     font-size: 2rem;
