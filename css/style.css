@@ -169,16 +169,6 @@ nav {
   color: var(--color-secondary);
   font-family: "Roboto", sans-serif;
 }
-.icon-momss {
-  text-align: center;
-}
-.icon {
-  width: 300px;
-  height: 300px;
-  padding: 20px;
-  box-shadow: inset 0 -3em 3em rgba(135, 72, 218, 0.3), 0 0 0 2px white,
-    0.3em 0.3em 1em rgba(246, 247, 244, 0.6);
-}
 @media screen and (max-width: 768px) {
   .about {
     padding: 1rem;
@@ -324,20 +314,6 @@ ol {
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.launch-contract {
-  color: var(--color-secondary);
-  font-size: 3rem;
-  letter-spacing: 2px;
-  margin-top: 6rem;
-  text-align: center;
-}
-.launch-number {
-  color: var(--color-secondary);
-  font-size: 2rem;
-  font-weight: 400;
-  margin-top: 2rem;
-  text-align: center;
-}
 @media screen and (max-width: 768px) {
   .card-meteora-border {
     width: 100%;
@@ -353,16 +329,6 @@ ol {
   }
   .card-meteora-paragrafh {
     font-size: 1rem;
-  }
-  .launch-contract {
-    font-size: 1.5rem;
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-  .launch-number {
-    font-size: 14px;
-    font-weight: 300;
-    margin-top: 1rem;
   }
 }
 
@@ -387,20 +353,41 @@ ol {
   font-size: 2rem;
   font-weight: 500;
 }
+.launch-contract {
+  color: var(--color-secondary);
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.launch-number {
+  color: var(--color-secondary);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  text-align: center;
+}
 @media screen and (max-width: 768px) {
   .foundation {
     padding: 1rem;
   }
   .foundation-container {
     width: 100%;
+    margin: 3rem 0;
     padding: 0;
   }
+
   .foundation-heading {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
   }
-  .foundation-info {
-    padding: 1rem;
+
+  .launch-contract {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+  .launch-number {
+    font-size: 12px;
+    margin-top: 0;
   }
 }
 
